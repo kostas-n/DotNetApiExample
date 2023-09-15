@@ -90,7 +90,7 @@ namespace SurveyExample.Api
 			services.AddMassTransit();
 			services.ConfigureBus(busSettings);
 			services.AddSingleton<IMessageBusProvider, RabbitMQProvider>();
-			services.AddHostedService<BusHostedService>();
+			// services.AddHostedService<BusHostedService>();
 
 			//services.AddDbContext<SurveysDbContext>(o =>
 			//{
